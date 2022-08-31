@@ -22,14 +22,8 @@ function App() {
   return (
     <div className="App">
       
-      <Cabecera 
-      
-        carrito={count}
-       
-       />
-      <Listado 
-     //carrito={contador}
-      />
+      <Cabecera carrito={count} />
+      <Listado carrito={contador}/>
     </div>
   );
   };

@@ -17,9 +17,10 @@ export default function Item(props) {
   const stockInicial= props.producto.stock
   
   const [stock, setStock] = useState(stockInicial);
+  console.log(props)
   function aumentar(){
     setStock(stock-1)
-    props.carrito.contador()
+    props.carrito.carrito()
   }
   return (
     <div className='producto'>
